@@ -1,0 +1,146 @@
+2024-09-28 00:18:39,753 [WARN] IP:2120 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:39,794 [WARN] IP:2120 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:39,794 [WARN] IP:2120 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:39,795 [WARN] IP:2120 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:39,795 [WARN] IP:2120 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:39,795 [WARN] IP:2120 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:47,068 [WARN] IP:2120 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:47,068 [WARN] IP:2120 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:47,068 [WARN] IP:2120 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:50,087 [WARN] IP:2120 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:50,087 [WARN] IP:2120 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:50,087 [WARN] IP:2120 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:51,034 [WARN] IP:2120 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:51,034 [WARN] IP:2120 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:51,034 [WARN] IP:2120 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:58,715 [WARN] IP:2120 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:58,715 [WARN] IP:2120 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:18:58,715 [WARN] IP:2120 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:19:37,093 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 848858728 Bytes (1073741824)
+2024-09-28 00:19:37,198 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 872453736 Bytes (1073741824)
+2024-09-28 00:19:44,314 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 823381408 Bytes (1073741824)
+2024-09-28 00:19:44,526 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_DEVICE
+2024-09-28 00:19:44,527 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-09-28 00:19:44,527 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-09-28 00:19:44,528 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2024-09-28 00:19:44,529 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-09-28 00:19:44,529 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-09-28 00:19:44,531 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-09-28 00:19:44,534 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.0.202403141607\\db\
+2024-09-28 00:19:44,557 [WARN] IP:2120 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:19:44,557 [WARN] IP:2120 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:19:44,557 [WARN] IP:2120 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:19:44,706 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\license.tmp_save
+2024-09-28 00:19:44,987 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\license.tmp
+2024-09-28 00:19:45,024 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\gpio.tmp_save
+2024-09-28 00:19:45,249 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\gpio.tmp
+2024-09-28 00:19:45,329 [WARN] IPConfigManager:2982 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-09-28 00:19:45,340 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_vars.tmp_save
+2024-09-28 00:19:45,464 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_vars.tmp
+2024-09-28 00:19:45,470 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_inc.tmp_save
+2024-09-28 00:19:45,546 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_inc.tmp
+2024-09-28 00:19:45,553 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_HalInit.tmp_save
+2024-09-28 00:19:45,661 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_HalInit.tmp
+2024-09-28 00:19:45,668 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_Msp.tmp_save
+2024-09-28 00:19:45,767 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_Msp.tmp
+2024-09-28 00:19:45,888 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-09-28 00:19:45,898 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-09-28 00:19:45,924 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usb_device.c_save
+2024-09-28 00:19:46,081 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usb_device.c
+2024-09-28 00:19:46,092 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usb_device.h_save
+2024-09-28 00:19:46,206 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usb_device.h
+2024-09-28 00:19:46,226 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\Target\usbd_conf.h_save
+2024-09-28 00:19:46,352 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\Target\usbd_conf.h
+2024-09-28 00:19:46,373 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\Target\usbd_conf.c_save
+2024-09-28 00:19:46,518 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\Target\usbd_conf.c
+2024-09-28 00:19:46,537 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_desc.h_save
+2024-09-28 00:19:46,639 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_desc.h
+2024-09-28 00:19:46,657 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_desc.c_save
+2024-09-28 00:19:46,773 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_desc.c
+2024-09-28 00:19:46,790 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_cdc_if.h_save
+2024-09-28 00:19:46,868 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_cdc_if.h
+2024-09-28 00:19:46,886 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_cdc_if.c_save
+2024-09-28 00:19:46,998 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_cdc_if.c
+2024-09-28 00:19:47,035 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Src\stm32f4xx_it.c_save
+2024-09-28 00:19:47,292 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Src\stm32f4xx_it.c
+2024-09-28 00:19:47,307 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Inc\stm32f4xx_it.h_save
+2024-09-28 00:19:47,460 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Inc\stm32f4xx_it.h
+2024-09-28 00:19:47,502 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Src\stm32f4xx_hal_msp.c_save
+2024-09-28 00:19:47,765 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Src\stm32f4xx_hal_msp.c
+2024-09-28 00:19:47,772 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\system.tmp_save
+2024-09-28 00:19:47,934 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\system.tmp
+2024-09-28 00:19:47,967 [INFO] CodeEngine:311 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-09-28 00:19:48,198 [INFO] CodeEngine:335 - Generated code: C:\git\stm32f4xx\stm32application\Core\Inc\stm32f4xx_hal_conf.h
+2024-09-28 00:19:48,293 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Inc\main.h_save
+2024-09-28 00:19:48,479 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Inc\main.h
+2024-09-28 00:19:48,500 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Src\main.c_save
+2024-09-28 00:19:48,664 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Src\main.c
+2024-09-28 00:19:49,402 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 385mS.
+2024-09-28 00:19:49,413 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-09-28 00:19:49,595 [INFO] ConfigFileManager:1503 - The Die is : DIE413
+2024-09-28 00:19:53,265 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 3852mS.
+2024-09-28 00:19:53,337 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-09-28 00:19:53,355 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-09-28 00:34:20,373 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 931379744 Bytes (1073741824)
+2024-09-28 00:34:21,180 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 759103424 Bytes (1073741824)
+2024-09-28 00:34:21,486 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_DEVICE
+2024-09-28 00:34:21,486 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-09-28 00:34:21,486 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-09-28 00:34:21,486 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2024-09-28 00:34:21,486 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-09-28 00:34:21,487 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-09-28 00:34:21,488 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.0.202403141607\\db\
+2024-09-28 00:34:21,513 [WARN] IP:2120 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:34:21,513 [WARN] IP:2120 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:34:21,513 [WARN] IP:2120 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-28 00:34:21,644 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\license.tmp_save
+2024-09-28 00:34:21,816 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\license.tmp
+2024-09-28 00:34:21,848 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\gpio.tmp_save
+2024-09-28 00:34:21,986 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\gpio.tmp
+2024-09-28 00:34:22,050 [WARN] IPConfigManager:2982 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-09-28 00:34:22,061 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_vars.tmp_save
+2024-09-28 00:34:22,171 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_vars.tmp
+2024-09-28 00:34:22,186 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_inc.tmp_save
+2024-09-28 00:34:22,264 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_inc.tmp
+2024-09-28 00:34:22,270 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_HalInit.tmp_save
+2024-09-28 00:34:22,371 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_HalInit.tmp
+2024-09-28 00:34:22,377 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_Msp.tmp_save
+2024-09-28 00:34:22,478 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_Msp.tmp
+2024-09-28 00:34:22,585 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-09-28 00:34:22,589 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-09-28 00:34:22,617 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usb_device.c_save
+2024-09-28 00:34:22,747 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usb_device.c
+2024-09-28 00:34:22,757 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usb_device.h_save
+2024-09-28 00:34:22,850 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usb_device.h
+2024-09-28 00:34:22,865 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\Target\usbd_conf.h_save
+2024-09-28 00:34:22,985 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\Target\usbd_conf.h
+2024-09-28 00:34:23,005 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\Target\usbd_conf.c_save
+2024-09-28 00:34:23,125 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\Target\usbd_conf.c
+2024-09-28 00:34:23,143 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_desc.h_save
+2024-09-28 00:34:23,221 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_desc.h
+2024-09-28 00:34:23,239 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_desc.c_save
+2024-09-28 00:34:23,364 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_desc.c
+2024-09-28 00:34:23,383 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_cdc_if.h_save
+2024-09-28 00:34:23,456 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_cdc_if.h
+2024-09-28 00:34:23,478 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_cdc_if.c_save
+2024-09-28 00:34:23,587 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_cdc_if.c
+2024-09-28 00:34:23,622 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Src\stm32f4xx_it.c_save
+2024-09-28 00:34:23,999 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Src\stm32f4xx_it.c
+2024-09-28 00:34:24,010 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Inc\stm32f4xx_it.h_save
+2024-09-28 00:34:24,122 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Inc\stm32f4xx_it.h
+2024-09-28 00:34:24,164 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Src\stm32f4xx_hal_msp.c_save
+2024-09-28 00:34:24,315 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Src\stm32f4xx_hal_msp.c
+2024-09-28 00:34:24,323 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\system.tmp_save
+2024-09-28 00:34:24,402 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\system.tmp
+2024-09-28 00:34:24,432 [INFO] CodeEngine:311 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-09-28 00:34:24,573 [INFO] CodeEngine:335 - Generated code: C:\git\stm32f4xx\stm32application\Core\Inc\stm32f4xx_hal_conf.h
+2024-09-28 00:34:24,668 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Inc\main.h_save
+2024-09-28 00:34:24,790 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Inc\main.h
+2024-09-28 00:34:24,812 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Src\main.c_save
+2024-09-28 00:34:24,989 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Src\main.c
+2024-09-28 00:34:25,759 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 442mS.
+2024-09-28 00:34:25,772 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-09-28 00:34:25,973 [INFO] ConfigFileManager:1503 - The Die is : DIE413
+2024-09-28 00:34:28,324 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 2551mS.
+2024-09-28 00:34:28,358 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 34mS.
+2024-09-28 00:34:28,371 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.

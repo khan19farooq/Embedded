@@ -1,0 +1,32 @@
+/**
+  * @brief USART1 Initialization Function
+  * @param None
+  * @retval None
+  */
+#include "usart.h"
+#include "main.h"
+
+UART_HandleTypeDef huart1; // Now use huart2 instead of huart1
+
+void MX_USART1_UART_Init(void)
+{
+  huart2.Instance = USART2;  // Set USART2 instance
+  huart2.Init.BaudRate = 115200;
+  huart2.Init.WordLength = UART_WORDLENGTH_8B;
+  huart2.Init.StopBits = UART_STOPBITS_1;
+  huart2.Init.Parity = UART_PARITY_NONE;
+  huart2.Init.Mode = UART_MODE_TX_RX;
+  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart2.Init.OverSampling = UART_OVERSAMPLING_16;
+  
+  if (HAL_UART_Init(&huart2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  
+  // Enable the USART2 interrupt
+  HAL_NVIC_SetPriority(USART2_IRQn, 0, 0);  // Set priority (adjust as needed)
+  HAL_NVIC_EnableIRQ(USART2_IRQn);  // Enable the interrupt in NVIC
+}
+
+

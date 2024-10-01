@@ -1,0 +1,75 @@
+#include "basicApplication.h"
+#include "gpio_config.h"
+#include <stdbool.h>
+#include "usart.h"
+#include <string.h>
+#include "main.h"
+#include "stm32f4xx_it.h"
+
+// Static variable to track the external LED state
+static bool externalLedState = false;
+
+// Static variables to track the transmit and receive of the uart
+static uint8_t txData[]  = "Hello, Tera Term\r\n";
+static uint8_t rxData[1];
+//static uint8_t transmissionComplete = 0;
+
+// Static function to control LED based on the state
+static void toggleExternalLed(void)
+{
+    if (externalLedState)
+    {
+        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_SET);  // Turn LED on
+    }
+    else
+    {
+        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_RESET); // Turn LED off
+    }
+}
+
+// function to control LED state based on button press
+void controlLedWithButton(void)
+{
+    // Read the state of the user button
+    bool userButtonPressed = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0); // Check the user button (GPIOA Pin 0)
+
+    // Set the LED state based on button press
+    if (userButtonPressed)
+    {
+        externalLedState = true;  // Button pressed: turn on LED
+    }
+    else
+    {
+        externalLedState = false; // Button not pressed: turn off LED
+    }
+
+    toggleExternalLed();  // Update the LED based on the state
+}
+/**
+void UART_CommunicationSetup(void) 
+{
+    // Start transmission and reception using interrupts
+    HAL_UART_Transmit_IT(&huart2, txData, sizeof(txData) - 1);  // Transmit initial message using huart2
+    HAL_UART_Receive_IT(&huart2, rxData, 1);  // Receive one byte using huart2
+}
+
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if (huart->Instance == USART2)
+    {
+    	transmissionComplete = 1;
+        // Handle transmission complete
+    }
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if (huart->Instance == USART2)
+    {
+        // Handle reception and echo the received data back to Tera Term
+        HAL_UART_Transmit_IT(&huart2, txData, 1);
+        HAL_UART_Receive_IT(&huart2, rxData, 1);
+    }
+}
+
+*/

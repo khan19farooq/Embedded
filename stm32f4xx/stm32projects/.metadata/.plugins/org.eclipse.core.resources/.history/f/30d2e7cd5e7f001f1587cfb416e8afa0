@@ -1,0 +1,22 @@
+/*
+ * ESP8266_HAL.h
+ *
+ *  Created on: Apr 14, 2020
+ *      Author: Controllerstech
+ */
+
+#ifndef INC_ESP8266_HAL_H_
+#define INC_ESP8266_HAL_H_
+
+
+void ESP_Init (char *SSID, char *PASSWD);
+
+void Server_Start (void);
+
+typedef struct
+{
+	char firstName[20];
+	char lastName [20];
+};
+
+#endif /* INC_ESP8266_HAL_H_ */

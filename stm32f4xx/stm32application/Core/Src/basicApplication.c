@@ -1,24 +1,70 @@
 #include "basicApplication.h"
+#include "gpio_config.h"
 #include <stdbool.h>
-#include <gpio_config.h>
+#include "usart.h"
+#include <string.h>
+#include "main.h"
+#include "stm32f4xx_it.h"
 
-// Declare the control flags (they should not be marked as `extern` here).
-bool userButtonON = false;
+// Static variable to track the external LED state
+static bool externalLedState = false;
 
-void externalLedControlWithButton(void)
+// Static function to control LED based on the state
+static void toggleExternalLed(void)
 {
-    // Read the state of the user button (connected to GPIOA Pin 0)
-    userButtonON = (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_SET);
-
-    // Check if the user button is pressed
-    if (userButtonON)
+    if (externalLedState)
     {
-        // Turn on the external LED (connected to GPIOC Pin 2)
-        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_SET);  // Turn LED on
     }
     else
     {
-        // Turn off the external LED (connected to GPIOC Pin 2)
-        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_RESET); // Turn LED off
     }
 }
+
+// function to control LED state based on button press
+void controlLedWithButton(void)
+{
+    // Read the state of the user button
+    bool userButtonPressed = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0); // Check the user button (GPIOA Pin 0)
+
+    // Set the LED state based on button press
+    if (userButtonPressed)
+    {
+        externalLedState = true;  // Button pressed: turn on LED
+    }
+    else
+    {
+        externalLedState = false; // Button not pressed: turn off LED
+    }
+
+    toggleExternalLed();  // Update the LED based on the state
+}
+/*
+void UART_CommunicationSetup(void) 
+{
+    // Start transmission and reception using interrupts
+    HAL_UART_Transmit_IT(&huart1, txData, sizeof(txData) - 1);  // Transmit initial message using huart2
+    HAL_UART_Receive_IT(&huart1, rxData, 1);  // Receive one byte using huart2
+}
+
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if (huart->Instance == USART1)
+    {
+    	transmissionComplete = 1;
+        // Handle transmission complete
+    }
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if (huart->Instance == USART1)
+    {
+        // Handle reception and echo the received data back to Tera Term
+        HAL_UART_Transmit_IT(&huart1, txData, 1);
+        HAL_UART_Receive_IT(&huart1, rxData, 1);
+    }
+}
+
+*/

@@ -1,1 +1,2 @@
-../Core/Src/basicApplication.c:9:6:externalLedControlWithButton	8	static
+../Core/Src/basicApplication.c:13:13:toggleExternalLed	8	static
+../Core/Src/basicApplication.c:26:6:controlLedWithButton	16	static

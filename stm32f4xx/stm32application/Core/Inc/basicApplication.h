@@ -8,6 +8,7 @@
 #ifndef INC_BASICAPPLICATION_H_
 #define INC_BASICAPPLICATION_H_
 
-void externalLedControlWithButton (void);
+void controlLedWithButton(void);
+//void UART_CommunicationSetup(void);
 
 #endif /* INC_BASICAPPLICATION_H_ */

@@ -1,0 +1,83 @@
+2024-09-30 10:01:01,519 [INFO] WebApp:189 - Connection lost
+2024-09-30 10:01:01,907 [INFO] WebApp:186 - Connection restablished
+2024-09-30 10:01:07,308 [INFO] WebApp:189 - Connection lost
+2024-09-30 10:01:07,574 [INFO] WebApp:186 - Connection restablished
+2024-09-30 10:14:30,718 [INFO] WebApp:189 - Connection lost
+2024-09-30 10:14:30,946 [INFO] WebApp:186 - Connection restablished
+2024-09-30 10:19:11,276 [INFO] WebApp:189 - Connection lost
+2024-09-30 10:19:11,562 [INFO] WebApp:186 - Connection restablished
+2024-09-30 10:19:14,698 [INFO] WebApp:189 - Connection lost
+2024-09-30 10:19:14,932 [INFO] WebApp:186 - Connection restablished
+2024-09-30 12:46:12,928 [INFO] WebApp:189 - Connection lost
+2024-09-30 12:46:13,346 [INFO] WebApp:186 - Connection restablished
+2024-09-30 12:46:16,292 [INFO] WebApp:189 - Connection lost
+2024-09-30 12:46:16,509 [INFO] WebApp:186 - Connection restablished
+2024-09-30 13:46:35,519 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-30 13:46:39,189 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-30 13:46:49,301 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 331484528 Bytes (804257792)
+2024-09-30 13:46:51,764 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 280532464 Bytes (804257792)
+2024-09-30 13:46:52,689 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USB_DEVICE
+2024-09-30 13:46:52,689 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-30 13:46:52,689 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-30 13:46:52,689 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USB_OTG_FS
+2024-09-30 13:46:52,689 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-30 13:46:52,689 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-30 13:46:52,690 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-30 13:46:52,692 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-30 13:46:52,724 [WARN] IP:2191 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-30 13:46:52,724 [WARN] IP:2191 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-30 13:46:52,724 [WARN] IP:2191 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2024-09-30 13:46:53,097 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\license.tmp_save
+2024-09-30 13:46:54,168 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\license.tmp
+2024-09-30 13:46:54,384 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\gpio.tmp_save
+2024-09-30 13:46:54,779 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\gpio.tmp
+2024-09-30 13:46:54,982 [WARN] IPConfigManager:3005 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-09-30 13:46:55,070 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_vars.tmp_save
+2024-09-30 13:46:55,403 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_vars.tmp
+2024-09-30 13:46:55,425 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_inc.tmp_save
+2024-09-30 13:46:55,611 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_inc.tmp
+2024-09-30 13:46:55,669 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_HalInit.tmp_save
+2024-09-30 13:46:55,904 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_HalInit.tmp
+2024-09-30 13:46:55,938 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_Msp.tmp_save
+2024-09-30 13:46:56,193 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\usb_otg_fs_Msp.tmp
+2024-09-30 13:46:56,502 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-09-30 13:46:56,554 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-09-30 13:46:56,628 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usb_device.c_save
+2024-09-30 13:46:56,872 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usb_device.c
+2024-09-30 13:46:56,896 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usb_device.h_save
+2024-09-30 13:46:57,104 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usb_device.h
+2024-09-30 13:46:57,133 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\Target\usbd_conf.h_save
+2024-09-30 13:46:57,330 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\Target\usbd_conf.h
+2024-09-30 13:46:57,368 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\Target\usbd_conf.c_save
+2024-09-30 13:46:57,643 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\Target\usbd_conf.c
+2024-09-30 13:46:57,682 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_desc.h_save
+2024-09-30 13:46:58,088 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_desc.h
+2024-09-30 13:46:58,138 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_desc.c_save
+2024-09-30 13:46:58,412 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_desc.c
+2024-09-30 13:46:58,464 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_cdc_if.h_save
+2024-09-30 13:46:58,675 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_cdc_if.h
+2024-09-30 13:46:58,715 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_cdc_if.c_save
+2024-09-30 13:46:58,934 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\USB_DEVICE\App\usbd_cdc_if.c
+2024-09-30 13:46:58,989 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Src\stm32f4xx_it.c_save
+2024-09-30 13:46:59,288 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Src\stm32f4xx_it.c
+2024-09-30 13:46:59,319 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Inc\stm32f4xx_it.h_save
+2024-09-30 13:46:59,496 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Inc\stm32f4xx_it.h
+2024-09-30 13:46:59,580 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Src\stm32f4xx_hal_msp.c_save
+2024-09-30 13:46:59,839 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Src\stm32f4xx_hal_msp.c
+2024-09-30 13:46:59,885 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\MXTmpFiles\system.tmp_save
+2024-09-30 13:47:00,042 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\MXTmpFiles\system.tmp
+2024-09-30 13:47:00,089 [INFO] CodeEngine:311 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-09-30 13:47:00,249 [INFO] CodeEngine:335 - Generated code: C:\git\stm32f4xx\stm32application\Core\Inc\stm32f4xx_hal_conf.h
+2024-09-30 13:47:00,418 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Inc\main.h_save
+2024-09-30 13:47:00,686 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Inc\main.h
+2024-09-30 13:47:00,714 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\stm32f4xx\stm32application\Core\Src\main.c_save
+2024-09-30 13:47:01,023 [INFO] CodeEngine:279 - Generated code: C:\git\stm32f4xx\stm32application\Core\Src\main.c
+2024-09-30 13:47:02,486 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 468mS.
+2024-09-30 13:47:02,507 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-30 13:47:02,723 [INFO] ConfigFileManager:1531 - The Die is : DIE413
+2024-09-30 13:47:02,750 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-09-30 13:47:02,779 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-09-30 13:47:02,803 [INFO] ApiDbMcu:508 - Load IP Config File for LIBJPEG
+2024-09-30 13:47:02,834 [INFO] ApiDbMcu:508 - Load IP Config File for LWIP
+2024-09-30 13:47:02,869 [INFO] ApiDbMcu:508 - Load IP Config File for MBEDTLS
+2024-09-30 13:47:02,893 [INFO] ApiDbMcu:508 - Load IP Config File for USB_HOST
