@@ -8,12 +8,26 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include <stdint.h>
 
 /* Exported types ------------------------------------------------------------*/
-extern UART_HandleTypeDef huart1;  // UART handle for USART2
+//extern UART_HandleTypeDef huart1;  // UART handle for USART2
+
+#define UART_BUFFER_SIZE 128  // Define the size of the ring buffer
+
+ extern volatile uint8_t rx_byte;
+
 
 /* Exported functions prototypes ---------------------------------------------*/
 void MX_USART1_UART_Init(void);  // Function to initialize USART2
+
+// Function prototypes
+void UART_RingBuffer_Init(void);        // Initialize ring buffer
+uint16_t UART_RingBuffer_Available(void); // Check available bytes in buffer
+void UART_RingBuffer_Write(uint8_t data); // Write a byte to the ring buffer
+uint8_t UART_RingBuffer_Read(void);      // Read a byte from the ring buffer
+void send_data_to_uart1(char *data);     // Send a string to UART1
+
 
 #ifdef __cplusplus
 }

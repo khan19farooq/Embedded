@@ -1,0 +1,75 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.c
+  * @brief          : Main program body
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2024 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "basicApplication.h"
+#include "system_config.h"
+#include "gpio_config.h"
+#include "usart.h"
+#include "usbd_cdc_if.h"
+#include <string.h>
+#include <stdint.h>
+#include "usb_device.h"
+//#include "ESP8266_HAL.h"
+//#include "ESP_DATA_HANDLER.h"
+//#include "UartRingbuffer.h"
+
+UART_HandleTypeDef huart1;
+//uint8_t rx_byte;
+
+
+int main(void)
+{
+  //uint8_t myBuffer[20] = "Hello World!!!\r\n";
+
+  HAL_Init(); 				/* Initialize the HAL library */
+
+  SystemClock_Config(); 	/* Configure the system clock */
+
+  MX_GPIO_Init();			/* Initialize GPIOs*/
+
+  MX_USART1_UART_Init();	/* Initialize UART */
+
+  MX_USB_DEVICE_Init();		/* Initialize USB */
+
+  UART_RingBuffer_Init();  	/* Initialize the UART ring buffer */
+
+  //HAL_UART_Receive_IT(&huart1, (uint8_t *)&rx_byte, 1); /* Enable UART receive interrupt */
+
+  //send_data_to_uart1("Hello from STM32 UART1\r\n");
+
+  char test_message[] = "Test message from STM32\r\n";
+
+  //HAL_UART_Transmit(&huart1, (uint8_t *)test_message, strlen(test_message), HAL_MAX_DELAY);
+  //UART_CommunicationSetup();
+  //ESP_Init("601 S Park Apt C", "fahrukh.khan666");
+  //HAL_Delay(2000);  // Wait for 2 seconds
+
+
+  while (1)
+  {
+    //CDC_Transmit_FS(myBuffer, strlen((char*)myBuffer));
+    //HAL_Delay(500);
+    controlLedWithButton();
+    HAL_UART_Transmit(&huart1, (uint8_t *)test_message, strlen(test_message), 1000);
+    HAL_Delay(1000);
+	//Server_Start();
+  }
+
+}

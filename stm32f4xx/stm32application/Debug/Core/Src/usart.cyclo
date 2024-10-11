@@ -1,1 +1,7 @@
-../Core/Src/usart.c:11:6:MX_USART1_UART_Init	2
+../Core/Src/usart.c:18:6:MX_USART1_UART_Init	2
+../Core/Src/usart.c:41:6:UART_RingBuffer_Init	1
+../Core/Src/usart.c:47:10:UART_RingBuffer_Available	1
+../Core/Src/usart.c:52:6:UART_RingBuffer_Write	2
+../Core/Src/usart.c:63:9:UART_RingBuffer_Read	2
+../Core/Src/usart.c:74:6:send_data_to_uart1	1
+../Core/Src/usart.c:79:6:HAL_UART_RxCpltCallback	2

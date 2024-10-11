@@ -15,6 +15,8 @@
   *
   ******************************************************************************
   */
+/* USER CODE END Header */
+/* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "basicApplication.h"
 #include "system_config.h"
@@ -24,32 +26,50 @@
 #include <string.h>
 #include <stdint.h>
 #include "usb_device.h"
-#include "ESP_DATA_HANDLER.h"
-#include "UartRingbuffer.h"
+//#include "ESP8266_HAL.h"
+//#include "ESP_DATA_HANDLER.h"
+//#include "UartRingbuffer.h"
+
+UART_HandleTypeDef huart1;
+//uint8_t rx_byte;
 
 
 int main(void)
 {
-  //uint8_t myBuffer[20] = "Hello World!!!\r\n";
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+  uint8_t myBuffer[20] = "Hello World!!!\r\n";
 
-  /* Configure the system clock */
-  SystemClock_Config();
+  HAL_Init(); 				/* Initialize the HAL library */
 
-  MX_GPIO_Init();
-  MX_USART1_UART_Init();
-  MX_USB_DEVICE_Init();
-  //UART_CommunicationSetup();
-  ESP_Init("601 S Park Apt C", "fahrukh.khan666", "192.168.40.21");
-  HAL_Delay(2000);  // Wait for 2 seconds
+  SystemClock_Config(); 	/* Configure the system clock */
+
+  MX_GPIO_Init();			/* Initialize GPIOs*/
+
+  MX_USART1_UART_Init();	/* Initialize UART */
+
+  MX_USB_DEVICE_Init();		/* Initialize USB */
+
+  UART_RingBuffer_Init();  	/* Initialize the UART ring buffer */
+
+  HAL_UART_Receive_IT(&huart1, (uint8_t *)&rx_byte, 1); /* Enable UART receive interrupt */
+
+  send_data_to_uart1("Hello from STM32 UART1\r\n");
+
+  //char test_message[] = "Test message from STM32\r\n";
+  //HAL_UART_Transmit(&huart1, (uint8_t *)test_message, strlen(test_message), HAL_MAX_DELAY);//Test
+
+  //ESP_Init("601 S Park Apt C", "fahrukh.khan666");
 
   while (1)
   {
     //CDC_Transmit_FS(myBuffer, strlen((char*)myBuffer));
     //HAL_Delay(500);
-    //controlLedWithButton();
-	  Server_Start();
+    controlLedWithButton();
+    //HAL_Delay(1000);
+    if (UART_RingBuffer_Available() > 0)
+    {
+    	uint8_t data = UART_RingBuffer_Read();
+    	HAL_UART_Transmit(&huart1, &data, 1, 10);
+    }
   }
 
 }

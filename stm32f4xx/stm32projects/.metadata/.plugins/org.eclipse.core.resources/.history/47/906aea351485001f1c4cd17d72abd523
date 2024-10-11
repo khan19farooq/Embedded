@@ -1,0 +1,85 @@
+/**
+  * @brief USART1 Initialization Function
+  * @param None
+  * @retval None
+  */
+#include "usart.h"
+#include "main.h"
+#include <string.h>
+
+extern UART_HandleTypeDef huart1; // Now use huart1
+
+//Ring buffer variables
+volatile uint8_t rx_byte;
+volatile uint8_t UART_Buffer[UART_BUFFER_SIZE];
+volatile uint16_t UART_Head = 0;
+volatile uint16_t UART_Tail = 0;
+
+void MX_USART1_UART_Init(void)
+{
+  huart1.Instance = USART1;  // Set USART1 instance
+  huart1.Init.BaudRate = 115200;
+  huart1.Init.WordLength = UART_WORDLENGTH_8B;
+  huart1.Init.StopBits = UART_STOPBITS_1;
+  huart1.Init.Parity = UART_PARITY_NONE;
+  huart1.Init.Mode = UART_MODE_TX_RX;
+  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart1.Init.OverSampling = UART_OVERSAMPLING_8;
+  
+  if (HAL_UART_Init(&huart1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  
+  // Enable the USART2 interrupt
+  HAL_NVIC_SetPriority(USART1_IRQn, 0, 0);  // Set priority (adjust as needed)
+  HAL_NVIC_EnableIRQ(USART1_IRQn);  // Enable the interrupt in NVIC
+}
+
+/****************************Ring Buffer functions******************************************/
+// Initialize the ring buffer
+void UART_RingBuffer_Init(void) {
+    UART_Head = 0;
+    UART_Tail = 0;
+}
+
+// Check how many bytes are available in the ring buffer
+uint16_t UART_RingBuffer_Available(void) {
+    return (UART_BUFFER_SIZE + UART_Head - UART_Tail) % UART_BUFFER_SIZE;
+}
+
+// Write data to the ring buffer
+void UART_RingBuffer_Write(uint8_t data) {
+    uint16_t next_head = (UART_Head + 1) % UART_BUFFER_SIZE;
+
+    // Check if the buffer is full
+    if (next_head != UART_Tail) {
+        UART_Buffer[UART_Head] = data;
+        UART_Head = next_head;
+    }
+}
+
+// Read data from the ring buffer
+uint8_t UART_RingBuffer_Read(void) {
+    if (UART_Head == UART_Tail) {
+        return 0;  // Buffer is empty
+    } else {
+        uint8_t data = UART_Buffer[UART_Tail];
+        UART_Tail = (UART_Tail + 1) % UART_BUFFER_SIZE;
+        return data;
+    }
+}
+
+// Send data to UART1
+void send_data_to_uart1(char *data) {
+    HAL_UART_Transmit(&huart1, (uint8_t *)data, strlen(data), HAL_MAX_DELAY);
+}
+
+// Interrupt callback when a byte is received
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+    if (huart->Instance == USART1) {
+        UART_RingBuffer_Write(rx_byte);  // Write received byte to ring buffer
+        HAL_UART_Receive_IT(&huart1, (uint8_t *)&rx_byte, 1);  // Re-enable the receive interrupt
+    }
+}
+
