@@ -57,7 +57,7 @@ int main(void)
   //char test_message[] = "Test message from STM32\r\n";
   //HAL_UART_Transmit(&huart1, (uint8_t *)test_message, strlen(test_message), HAL_MAX_DELAY);//Test
 
-  //ESP_Init("601 S Park Apt C", "fahrukh.khan666");
+  //ESP_Init("601 S Park Apt C", "fa**********");
 
   while (1)
   {
